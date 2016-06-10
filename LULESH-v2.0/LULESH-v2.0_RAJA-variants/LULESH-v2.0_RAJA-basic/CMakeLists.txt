@@ -59,5 +59,5 @@ elseif (RAJA_ENABLE_OPENMP)
     lulesh-init.cc
     lulesh-util.cc
     lulesh-viz.cc)
-  target_link_libraries(lulesh2.0basic.exe RAJA ${RT_LIBRARIES})
+  target_link_libraries(lulesh2.0basic.exe RAJA ${RAJA_RT_LIBRARIES})
 endif()

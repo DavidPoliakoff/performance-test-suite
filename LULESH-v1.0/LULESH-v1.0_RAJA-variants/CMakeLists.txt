@@ -63,11 +63,11 @@ add_executable(lulesh-RAJA-serial.exe
 
 target_link_libraries(lulesh-RAJA-serial.exe
  RAJA
- ${RT_LIBRARIES})
+ ${RAJA_RT_LIBRARIES})
 
 endif()
 
 target_link_libraries(lulesh-RAJA-parallel.exe
   RAJA
-  ${RT_LIBRARIES})
+  ${RAJA_RT_LIBRARIES})
 
