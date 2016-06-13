@@ -44,7 +44,7 @@ cmake_minimum_required (VERSION 2.8)
 
 find_package(RAJA)
 find_package(caliper)
-add_definitions(${RAJA_COMPILE_DEFINITIONS})
+add_definitions(" -DRAJA_USE_GETTIME")
 include_directories("${RAJA_INCLUDE_DIR}")
 include_directories(include)
 set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} ${RAJA_COMPILE_FLAGS})
